@@ -13,3 +13,9 @@ in order to run this application the 1st step you have to Install dependencies d
 ```bash
 npm install
 ```
+## Run the server
+Using the command below to run this server
+
+```bash
+npm run dev
+```
