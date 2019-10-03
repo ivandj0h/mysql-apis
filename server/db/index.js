@@ -22,4 +22,15 @@ blogDb.all = () => {
     });
 };
 
+blogDb.all = (id) => {
+    return new Promise((resolve, reject) => {
+        pool.query('SELECT * FROM tbl_blogs WHERE blog_id = ?', id , (err, results) => {
+            if(err){
+                return reject(err);
+            }
+            return resolve(results);
+        });
+    });
+};
+
 module.exports = blogDb;
