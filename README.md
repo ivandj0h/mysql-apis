@@ -13,6 +13,9 @@ in order to run this application the 1st step you have to Install dependencies d
 ```bash
 npm install
 ```
+
+the 2nd step you have to create your mysql rdbms using phpmyadmin or other tools
+
 ## Run the server
 Using the command below to run this server
 
