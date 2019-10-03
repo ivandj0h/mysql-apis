@@ -1,9 +1,9 @@
 const express = require('express');
+const apiRouter = require('./routes');
+
 const app = express();
 
 app.use(express.json);
-app.listen(process.env.PORT || '3000', () => {
+app.use('/api/profil', apiRouter);
 
-    console.log(`Server is Running on port: ${process.env.PORT || '3000'}`);
-
-});
+app.listen(process.env.PORT || '3000', () => { console.log(`Server is Running on port: ${process.env.PORT || '3000'}`); });
